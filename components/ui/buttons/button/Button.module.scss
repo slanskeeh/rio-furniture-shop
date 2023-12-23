@@ -1,0 +1,36 @@
+.button {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  border: none;
+  border-radius: 8px;
+
+  &[data-size="m"] {
+    padding: 12px;
+  }
+  &[data-size="s"] {
+    padding: 4px;
+  }
+
+  &[data-color="gray"] + &[data-variant="blur"] {
+    color: var(--color-white, rgba(255, 255, 255, 1));
+    background-color: var(--color-black-a-400, rgba(0, 0, 0, 0.24));
+    backdrop-filter: blur(4px);
+  }
+  &[data-color="gray"] + &[data-variant="solid"] {
+    color: var(--color-black, rgba(0, 0, 0, 1));
+    background-color: var(--color-black, rgba(0, 0, 0, 1));
+  }
+  &[data-color="gray"] + &[data-variant="alpha"] {
+    color: var(--color-black, rgba(0, 0, 0, 1));
+    background-color: var(--color-black-a-100, rgba(0, 0, 0, 0.06));
+  }
+
+  &[data-color="orange"] {
+    background-color: var(--color-orange-a-400, rgba(227, 150, 74, 0.24));
+  }
+}
