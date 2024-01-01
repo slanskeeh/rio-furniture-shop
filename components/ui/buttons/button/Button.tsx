@@ -17,7 +17,7 @@ const Button: React.FC<IButton> = ({ variant, size, color, text, icon }) => {
       data-variant={variant}
       className={styles.button}
     >
-      <div className={styles.button_icon}>{iconElem}</div>
+      {icon && <div className={styles.button_icon}>{iconElem}</div>}
       <p className="p-bold">{text}</p>
     </button>
   );
