@@ -1,4 +1,5 @@
 import Categories from "@/components/common/categories/Categories";
+import Button from "@/components/ui/buttons/button/Button";
 import CardCategory from "@/components/ui/cards/cardCategory/CardCategory";
 
 export default function Home() {
