@@ -9,6 +9,15 @@
   border: none;
   border-radius: 8px;
 
+  &_icon {
+    height: 24px;
+    width: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &[data-size="m"] {
     padding: 12px;
   }
@@ -32,7 +41,7 @@
 
   &[data-variant="orange-solid"] {
     color: var(--color-orange-100, hsl(29 73% 90%));
-    background-color: var(--color-orange-500, hsl(30 73% 59%));
+    background-color: var(--color-orange-100, hsl(30 73% 59%));
   }
   &[data-variant="orange-blur"] {
     color: var(--color-orange-200, rgba(227, 150, 74, 1));
