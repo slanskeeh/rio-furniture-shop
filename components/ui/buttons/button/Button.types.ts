@@ -1,9 +1,14 @@
 import { ReactNode } from "react";
 
 export interface IButton {
-  variant: "blur" | "solid" | "alpha";
+  variant:
+    | "gray-blur"
+    | "gray-solid"
+    | "gray-alpha"
+    | "orange-blur"
+    | "orange-solid"
+    | "orange-alpha";
   size: "m" | "s";
-  color: "gray" | "orange";
-  text: string;
-  icon: string | ReactNode;
+  text?: string;
+  icon?: string | ReactNode;
 }
