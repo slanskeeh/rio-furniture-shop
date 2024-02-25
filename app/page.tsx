@@ -1,7 +1,7 @@
 import Categories from "@/components/common/categories/Categories";
-import Button from "@/components/ui/buttons/button/Button";
 import CardCategory from "@/components/ui/cards/cardCategory/CardCategory";
 import CardProduct from "@/components/ui/cards/cardProduct/CardProduct";
+import CardRoom from "@/components/ui/cards/cardRoom/CardRoom";
 
 export default function Home() {
   return (
@@ -21,6 +21,7 @@ export default function Home() {
         }}
         image="/assets/images/products/101.png"
       />
+      <CardRoom title="Room" image="/assets/images/products/101.png" />
     </main>
   );
 }

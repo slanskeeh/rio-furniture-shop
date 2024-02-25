@@ -3,7 +3,7 @@ import { I{{pascalCase}} } from './{{pascalCase}}.types'
 
 const {{pascalCase}}: React.FC<I{{pascalCase}}> = ({}) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.{{camelCase}}}>
       
     </div>
   )

@@ -1,6 +1,6 @@
 export interface ICardRoom {
   href?: string;
-  img?: string;
+  image?: string;
   alt?: string;
   title: string;
 }
